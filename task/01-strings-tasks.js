@@ -131,7 +131,10 @@ function repeatString(value, count) {
  *   'ABABAB','BA' => 'ABAB'
  */
 function removeFirstOccurrences(str, value) {
-    throw new Error('Not implemented');
+    let ind = str.indexOf(value);
+    let result = str.split('');
+    result.splice(ind, value.split('').length);
+    return result.join('');
 }
 
 /**
